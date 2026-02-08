@@ -1,0 +1,67 @@
+/* ////////////////////////////////start landing-for-subsection//////////////////////////// */
+.landing-for-subsection {
+    background-image: url(../image/Governance\ and\ transparency/landing-3);
+}
+
+/* ///////////////////////////end landing-for-subsection////////////////////////// */
+/*/////////////////////// start statistics //////////////////////////////////////////////// */
+.statistics{
+    padding: 50px 20px;
+        background-color: rgb(239, 239, 239);
+
+        .statistics-section {
+            padding: 0 30px;
+
+        }
+
+        .stat-card {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0 !important;
+        }
+
+        .stat-card:not(:first-child) {
+            border-right: 1px solid #ccc;
+        }
+
+
+        .stat-number {
+            font-size: 35px;
+            font-weight: bold;
+            color: #00a8e8;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .stat-title {
+            font-size: 16px;
+            color: #001b71;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .stat-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #757575;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .stat-number {
+                font-size: 30px;
+            }
+
+            .stat-label {
+                font-size: 16px;
+            }
+
+            .stat-card {
+                border: none !important;
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+/*/////////////////////// end statistics //////////////////////////////////////////////// */

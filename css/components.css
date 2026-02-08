@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ////////////////////// Navbar Styles //////////////////////  */
+.navbar {
+    .nav-item {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #00a7e1;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        &:hover a {
+            color: #00a7e1;
+        }
+    }
+.dropdown-menu{
+            padding: 0;
+            width: 250px;
+            border-radius: 0;
+           
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+.dropdown-item{
+        color: #00a7e1;
+            padding: 10px 5px;
+                border-bottom: 2px solid #eee;
+
+        &:hover {
+            background-color: #001b71;
+            color: #e0f7ff !important;
+        }
+    }
+}
+
+    @media (max-width: 992px) {
+
+        .navbar-collapse {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 300px;
+            max-width: 100%;
+            background-color: black;
+            overflow-y: scroll;
+            min-height: 100vh;
+            height: 100vh;
+
+            .nav-item {
+                a {
+                    color: white;
+                    padding: 10px 20px;
+                    font-weight: normal !important;
+                    border-bottom: 1px solid #333;
+
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            .dropdown-menu {
+                width: 100%;
+                padding: 0 20px;
+                background-color: black;
+
+                .dropdown-item {
+                    color: white;
+                    background-color: black;
+                }
+            }
+
+            .fa-x {
+                color: #00a7e1;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*/////////////////////// end navbar style //////////////////////// */
+
+/*/////////////////////// start footer style //////////////////////// */
+footer {
+    background-color: #152350;
+    color: white;
+    position: relative;
+    z-index: 0;
+
+    .copy-right {
+        background-color: #0f1c47;
+    }
+
+    li {
+        a {
+
+            text-decoration: none;
+            position: relative;
+            z-index: 0;
+
+            &::before {
+                content: "";
+                bottom: -10px;
+                right: 0;
+                width: 0px;
+                height: 2px;
+                background-color: #00a8e8;
+                position: absolute;
+                z-index: -1;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+
+    .social {
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: #00a8e8;
+            }
+        }
+
+        i {
+            background-color: #212e59;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+
+    .fa-envelope,
+    .fa-phone {
+        color: #00a7e1;
+    }
+
+    .important-list {
+        height: 100px;
+    }
+
+    .list:not(:first-child) {
+        border-right: 1px solid #ccc;
+    }
+
+    @media (max-width:992px) {
+        .list {
+            border-right: none !important;
+        }
+
+        .important-list {
+            height: auto !important;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-image: url(../image/logo.png);
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 0.1;
+    }
+}
+
+/*/////////////////////// end footer style //////////////////////// */
+
+/* ////////////////////////////////start landing-for-subsection//////////////////////////// */
+.landing-for-subsection {
+    margin-top: 100px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ///////////////////////////end landing-for-subsection////////////////////////// */
+/* ///////////////////////////start swiper////////////////////////// */
+.section-swiper {
+        .swiper-button-prev,
+            .swiper-button-next {
+                position: absolute;
+                top: -50px;
+                background-color: #00a7e1;
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                cursor: pointer;
+        
+                &::after {
+                    font-size: 20px;
+                }
+            }
+        
+            .swiper-button-next {
+                left: 0 !important;
+            }
+        
+            .swiper-button-prev {
+                left: 80px !important;
+                right: auto !important;
+            }
+        
+            @media (max-width: 767px) {
+                h2 {
+                    font-size: 16px !important;
+                }
+        
+                .swiper-button-prev,
+                .swiper-button-next {
+                    top: -50px !important;
+                    height: 30px !important;
+                    width: 30px !important;
+        
+                    &::after {
+                        font-size: 15px;
+                    }
+                }
+        
+                .swiper-button-next {
+                    left: 0 !important;
+                }
+        
+                .swiper-button-prev {
+                    left: 40px !important;
+                    right: auto !important;
+                }
+        
+            }
+}
+/* ///////////////////////////end swiper////////////////////////// */
+/* ///////////////////////////start main bg////////////////////////// */
+.main-bg {
+    padding: 50px 0;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        z-index: -1;
+        background: url(../image/logo.png);
+        opacity: 0.03;
+    }
+}
+/* ///////////////////////////end main bg////////////////////////// */
+/* ///////////////////////////start filters////////////////////////// */
+ .filters {
+     display: flex;
+     gap: 20px;
+     margin-bottom: 30px;
+
+     .form-select,
+     .order-btn {
+         padding: 15px 20px !important;
+         border-radius: 15px;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px;
+         -ms-border-radius: 15px;
+         -o-border-radius: 15px;
+         width: 150px;
+         text-align: start;
+         color: #757575 !important;
+
+         &::after {
+             display: none !important;
+
+         }
+     }
+
+     .form-select {
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         background-image: none;
+     }
+ }
+/* ///////////////////////////end filters////////////////////////// */
+/* ///////////////////////////start form////////////////////////// */
+form{
+
+    .btn{
+        
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        &:hover{
+            background-color:  rgb(6, 85, 169) !important;
+            color: white;
+        }
+    }
+    .form-control {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        &::placeholder {
+            color: #ccc !important;
+        }   
+    }
+    .upload-file{
+        position: relative;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        input[type="file"]{
+            opacity: 0;
+        }
+        &::before {
+            content: 'اضغط هنا لرفع المبف من جهازك';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            color: #ccc;
+
+        }
+        &::after {
+            content: '\f574';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100px;
+            color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+}
+/* ///////////////////////////end form////////////////////////// */

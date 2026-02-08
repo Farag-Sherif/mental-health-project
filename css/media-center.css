@@ -1,0 +1,157 @@
+/* ////////////////////////////////start landing-for-subsection//////////////////////////// */
+.landing-for-subsection {
+    background-image: url(../image/Media-Center/landing);
+}
+
+@media (max-width:767px) {
+    .landing-for-subsection {
+        flex-direction: column;
+        height: auto !important;
+        padding: 30px 20px;
+        text-align: center;
+
+        .filters {
+            flex-direction: column;
+            gap: 10px;
+            width: 100% !important;
+
+            .dropdown,
+            ul,
+            .select,
+            .form-select,
+            .order-btn {
+                width: 100% !important;
+            }
+
+            h5 {
+                text-align: start !important;
+            }
+        }
+    }
+}
+
+/* ///////////////////////////end landing-for-subsection////////////////////////// */
+/* ///////////////////////////start media-center////////////////////////////////////////////////// */
+.media-center {
+    padding: 50px 20px 100px 20px;
+    position: relative;
+
+    .swiper {
+        overflow: visible !important;
+    }
+
+    .card {
+        cursor: pointer;
+        width: calc((100% - 40px)/3) !important;
+        min-width: 300px;
+        max-width: 100% !important;
+        background: #f6f6f6;
+        border-radius: 40px 0 40px 0 !important;
+        -webkit-border-radius: 40px 0 40px 0 !important;
+        -moz-border-radius: 40px 0 40px 0 !important;
+        -ms-border-radius: 40px 0 40px 0 !important;
+        -o-border-radius: 40px 0 40px 0 !important;
+        overflow: hidden !important;
+
+        .image {
+            overflow: hidden !important;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                opacity: 0;
+                transition: .5s;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
+            }
+
+        }
+        &:hover {
+            .image::after {
+                opacity: 1;
+            }
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+            transition: .5s;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            -o-transition: .5s;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .card {
+            width: 100% !important;
+        }
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: -50px !important;
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+.swiper-pagination {
+            display: flex;
+            width: fit-content;
+            position: absolute;
+            bottom: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .swiper-button-prev,
+        .swiper-button-next,
+        .swiper-pagination-bullet {
+            width: 35px;
+            height: 35px;
+            background: rgb(6, 181, 200);
+            color: #fff;
+            opacity: 1;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover,
+        .swiper-pagination-bullet:hover {
+            background: #bbb;
+        }
+        .swiper-pagination-bullet-active {
+            background: #0d6efd;
+            color: #fff;
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 15px !important;
+        }
+    }
+        .swiper-slide {
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+    
+        .swiper-slide-active {
+            opacity: 1;
+        }
+
+}

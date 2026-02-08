@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    </head>
+    <body>
+        <!-- ////////////////////////// start Header ////////////////////////// -->
+        <nav class="navbar navbar-expand-lg bg-light position-fixed w-100 top-0 z-3 ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/logo.png" alt="logo">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end fw-bold" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="navbar-brand d-flex align-items-center bg-light m-0 justify-content-between px-3 d-lg-none">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="image/logo.png" alt="logo">
+                            </a>
+                            <i class="fa-solid fa-x"></i>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="index.html"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                عن الجمعية
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li>
+                                    <a class="dropdown-item" href="about.html">من نحن</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="CEO.html">المدير التنفيذي</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="BoardMembers.html">أعضاء مجلس الادارة</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="MembersOfGeneralAssembly.html">أعضاء الجمعية العمومية</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="organizational-chart.html">كلمة رئيس مجلس الادارة</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="strategic-framework.html">الإطار الإستراتيجي</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media-center.html">المركز الاعلامي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Electronic-services.html">الخدمات الألكترونية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Reports.html">التقارير السنوية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                الحوكمة والشفافية
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li>
+                                    <a class="dropdown-item" href="Regulations-and-policies.html">اللوائح والسياسات</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Association-committees.html">لجان الجمعية</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Reports.html">التقارير السنوية</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="statistics.html">الاحصائيات</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Minutes-of-meetings.html">
+                                        محاضر إجتماعات الجمعية
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Consultations.html">الاستشارات</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                التوظيف والتطوع
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li>
+                                    <a class="dropdown-item" href="Employment.html">التوظيف</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Volunteering.html">التطوع</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Awareness.html">التوعية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                الشركاء
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li>
+                                    <a class="dropdown-item" href="#">الشركاء</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Partnership-request.html">طلب شراكة</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-Us.html">اتصل بنا</a>
+                        </li>
+                    </ul>
+                    <div class="contact d-lg-none p-3 mt-3">
+                        <div class="box d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-phone fs-1 text-primary"></i>
+                            <div class="info">
+                                <h6 class="fs-6 text-secondary">الهاتف</h6>
+                                <p class="fs-6 text-light fw-normal">966591955655+</p>
+                            </div>
+                        </div>
+                        <div class="box d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-phone fs-1 text-primary"></i>
+                            <div class="info">
+                                <h6 class="fs-6 text-secondary">الهاتف</h6>
+                                <p class="fs-6 text-light fw-normal">966591955655+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social d-lg-none d-flex align-items-center justify-content-between bg-primary mt-5">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f p-3 text-light"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter p-3 text-light"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in p-3  text-light"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube p-3 text-light"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ////////////////////////// end Header ////////////////////////// -->
+        <!-- ////////////////////////// start landing ////////////////////////// -->
+        <div class="landing">
+            <div class="col-12 position-relative">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="image/Home/landing-1.png" alt="landing image" class="img-fluid w-100 object-fit-cover object-position-start">
+                            <div class="text px-5 position-absolute text-light">
+                                <h3 class="mb-2">اهلا بكم في موقع الجمعية العمومية</h3>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة
+                                </p>
+                                <button class="btn btn-primary rounded-5 py-3 px-5 mt-5 me-4">اقراء المزيد</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Home/landing-1.png" alt="landing image" class="img-fluid w-100 object-fit-cover">
+                            <div class="text px-5 position-absolute text-light">
+                                <h3 class="mb-2">اهلا بكم في موقع الجمعية العمومية</h3>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة
+                                </p>
+                                <button class="btn btn-primary rounded-5 py-3 px-5 mt-5 me-4">اقراء المزيد</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////////////// end landing ////////////////////////// -->
+        <!-- ////////////////////////// strat about ////////////////////////// -->
+        <div class="about">
+            <div class="d-flex align-items-center gap-5 justify-content-between flex-wrap-reverse flex-md-nowrap">
+                <div class="text w-50">
+                    <h2 class="mb-5  text-primary-emphasis">
+                        عن الجمعية
+                        <span class="text-primary">العمومية</span>
+                    </h2>
+                    <p class="text-secondary">جمعية أمل للأزمات النفسية هي جمعية أهلية غير ربحية مرخصة من المركز الوطني لتنمية القطاع غير الربحي بترخيص رقم 5369، الجمعية عضو في تحالف جمعيات الإرشاد والصحة النفسية، تحت إشراف المركز الوطني لتعزيز الصحة النفسية، تهدف إلى تقديم خدمات الدعم النفسي للأشخاص الذين يعانون من الأزمات النفسية، وتأسست عام 2023 من قبل مجموعة من المتطوعين  المتخصصين الذين يؤمنون بأهمية الصحة النفسية وحق الجميع في الحصول على الدعم اللازم.</p>
+                    <button class="btn btn-primary rounded-5 py-3 px-5 mt-3">اقراء المزيد</button>
+                </div>
+                <div class="image w-50 text-start">
+                    <img src="image/Home/about.jpg" alt="about image" class="img-fluid rounded-5">
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////////////// end about ////////////////////////// -->
+        <!-- ////////////////////////// start services ////////////////////////// -->
+        <div class="services main-bg section-swiper overflow-x-hidden">
+            <div class="text-center">
+                <h2 class="mb-5  text-primary-emphasis">
+                    الخدمات الألكترونية
+                </div>
+                <div class="swiper mySwiper mySwiper2 d-flex position-relative">
+                    <div class="swiper-wrapper d-flex flex-nowrap ">
+                        <div class="swiper-slide card h-100 position-relative p-3 text-center rounded-3">
+                            <img src="image/Home/services/services-1.png" class="card-img-top " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-primary-emphasis">الخدمة الأولى</h5>
+                                <p class="card-text">هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card h-100 position-relative p-3 text-center rounded-3">
+                            <img src="image/Home/services/services-1.png" class="card-img-top " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-primary-emphasis">الخدمة الأولى</h5>
+                                <p class="card-text">هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card h-100 position-relative p-3 text-center rounded-3">
+                            <img src="image/Home/services/services-1.png" class="card-img-top " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-primary-emphasis">الخدمة الأولى</h5>
+                                <p class="card-text">هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card h-100 position-relative p-3 text-center rounded-3">
+                            <img src="image/Home/services/services-1.png" class="card-img-top " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-primary-emphasis">الخدمة الأولى</h5>
+                                <p class="card-text">هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card h-100 position-relative p-3 text-center rounded-3">
+                            <img src="image/Home/services/services-1.png" class="card-img-top " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-primary-emphasis">الخدمة الأولى</h5>
+                                <p class="card-text">هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card h-100 position-relative p-3 text-center rounded-3">
+                            <img src="image/Home/services/services-1.png" class="card-img-top " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-primary-emphasis">الخدمة الأولى</h5>
+                                <p class="card-text">هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <button class="btn btn-primary rounded-5 py-3 px-5 mt-5 mx-auto d-block ">اقراء المزيد</button>
+            </div>
+            <!-- ////////////////////////// end services ////////////////////////// -->
+            <!-- ////////////////////////// start partner ////////////////////////// -->
+            <div class="partner py-5 px-3">
+                <div class="title-section">
+                    <h1 class=" fs-3 fw-bold text-end text-light" data-translate="clientsTitle">شركاؤنا في النجاح</h1>
+                </div>
+                <button class="btn btn-primary rounded-3 py-3 px-5 mb-5 d-block "> طلب شراكة</button>
+                <div class="partner-swiper overflow-hidden d-flex gap-3">
+                    <div class="partner-wrapper d-flex gap-3">
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                    </div>
+                    <div class="partner-wrapper d-flex gap-3">
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                        <div class="partner-slide border rounded-3 overflow-hidden">
+                            <img src="image/Home/partner/partner.png" alt="Partner Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ////////////////////////// end partner ////////////////////////// -->
+            <!-- ////////////////////////// start stats ////////////////////////// -->
+            <div class="stats main-bg py-5 px-3">
+                <div class="stats-section my-5">
+                    <div class="row  g-4">
+                        <div class="col-12 col-md-3 stat-card py-4">
+                            <div class="stat-title d-flex align-items-center ">
+                                <div class="stat-number">+ 1000</div>
+                                <div class="stat-title">عدد الاستشارات</div>
+                            </div>
+                            <div class="stat-subtitle">عنوان تجريبي</div>
+                        </div>
+                        <div class="col-12 col-md-3 stat-card py-4 ">
+                            <div class="stat-title d-flex align-items-center">
+                                <div class="stat-number">+ 1000</div>
+                                <div class="stat-title">عدد البرامج المنفذة</div>
+                            </div>
+                            <div class="stat-subtitle">عنوان تجريبي</div>
+                        </div>
+                        <div class="col-12 col-md-3 stat-card py-4">
+                            <div class="stat-title d-flex align-items-center">
+                                <div class="stat-number">+ 1000</div>
+                                <div class="stat-title">عدد المستفيدين</div>
+                            </div>
+                            <div class="stat-subtitle">عنوان تجريبي</div>
+                        </div>
+                        <div class="col-12 col-md-3 stat-card py-4">
+                            <div class="stat-title d-flex align-items-center">
+                                <div class="stat-number">+ 1000</div>
+                                <div class="stat-title">عدد الأخصائيين</div>
+                            </div>
+                            <div class="stat-subtitle">عنوان تجريبي</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ////////////////////////// end stats ////////////////////////// -->
+            <!-- ////////////////////////// start  center ////////////////////////// -->
+            <div class="center section-swiper overflow-x-hidden">
+                <div class="text-center">
+                    <h2 class="mb-5  text-primary-emphasis">
+                        المركز الاعلامي
+                    </h2>
+                </div>
+                <div class="swiper mySwiper mySwiper3 d-flex position-relative">
+                    <div class="swiper-wrapper d-flex flex-nowrap ">
+                        <div class="swiper-slide h-100 position-relative p-3 text-end ">
+                            <div class="card border-0">
+                                <img src="image/Home/2025_03_09_04_07_50_alyom-alaaalmy-llasr.jpg" class="card-img-top" alt="...">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-primary-emphasis">اليوم العالمي للاسرة</h5>
+                                    <p class="card-text text-secondary">لتعزيز الصحة النفسية، تهدف إلى تقديم خدمات الدعم النفسي للأشخاص الذين يعانون من الأزمات النفسية، وتأسست عام 2023 من قبل مجموعة من المتطوعين المتخصصين الذين يؤمنون بأهمية الصحة النفسية وحق الجميع في الحصول على الدعم اللازم.</p>
+                                    <a href="#" class="btn btn-primary rounded-5 py-3 px-5"> اقراء المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-100 position-relative p-3 text-end ">
+                            <div class="card border-0">
+                                <img src="image/Home/2025_03_09_04_07_50_alyom-alaaalmy-llasr.jpg" class="card-img-top" alt="...">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-primary-emphasis">اليوم العالمي للاسرة</h5>
+                                    <p class="card-text text-secondary">لتعزيز الصحة النفسية، تهدف إلى تقديم خدمات الدعم النفسي للأشخاص الذين يعانون من الأزمات النفسية، وتأسست عام 2023 من قبل مجموعة من المتطوعين المتخصصين الذين يؤمنون بأهمية الصحة النفسية وحق الجميع في الحصول على الدعم اللازم.</p>
+                                    <a href="#" class="btn btn-primary rounded-5 py-3 px-5"> اقراء المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-100 position-relative p-3 text-end ">
+                            <div class="card border-0">
+                                <img src="image/Home/2025_03_09_04_07_50_alyom-alaaalmy-llasr.jpg" class="card-img-top" alt="...">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-primary-emphasis">اليوم العالمي للاسرة</h5>
+                                    <p class="card-text text-secondary">لتعزيز الصحة النفسية، تهدف إلى تقديم خدمات الدعم النفسي للأشخاص الذين يعانون من الأزمات النفسية، وتأسست عام 2023 من قبل مجموعة من المتطوعين المتخصصين الذين يؤمنون بأهمية الصحة النفسية وحق الجميع في الحصول على الدعم اللازم.</p>
+                                    <a href="#" class="btn btn-primary rounded-5 py-3 px-5"> اقراء المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-100 position-relative p-3 text-end ">
+                            <div class="card border-0">
+                                <img src="image/Home/2025_03_09_04_07_50_alyom-alaaalmy-llasr.jpg" class="card-img-top" alt="...">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-primary-emphasis">اليوم العالمي للاسرة</h5>
+                                    <p class="card-text text-secondary">لتعزيز الصحة النفسية، تهدف إلى تقديم خدمات الدعم النفسي للأشخاص الذين يعانون من الأزمات النفسية، وتأسست عام 2023 من قبل مجموعة من المتطوعين المتخصصين الذين يؤمنون بأهمية الصحة النفسية وحق الجميع في الحصول على الدعم اللازم.</p>
+                                    <a href="#" class="btn btn-primary rounded-5 py-3 px-5"> اقراء المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-100 position-relative p-3 text-end ">
+                            <div class="card border-0">
+                                <img src="image/Home/2025_03_09_04_07_50_alyom-alaaalmy-llasr.jpg" class="card-img-top" alt="...">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-primary-emphasis">اليوم العالمي للاسرة</h5>
+                                    <p class="card-text text-secondary">لتعزيز الصحة النفسية، تهدف إلى تقديم خدمات الدعم النفسي للأشخاص الذين يعانون من الأزمات النفسية، وتأسست عام 2023 من قبل مجموعة من المتطوعين المتخصصين الذين يؤمنون بأهمية الصحة النفسية وحق الجميع في الحصول على الدعم اللازم.</p>
+                                    <a href="#" class="btn btn-primary rounded-5 py-3 px-5"> اقراء المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-100 position-relative p-3 text-end ">
+                            <div class="card border-0">
+                                <img src="image/Home/2025_03_09_04_07_50_alyom-alaaalmy-llasr.jpg" class="card-img-top" alt="...">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title text-primary-emphasis">اليوم العالمي للاسرة</h5>
+                                    <p class="card-text text-secondary">لتعزيز الصحة النفسية، تهدف إلى تقديم خدمات الدعم النفسي للأشخاص الذين يعانون من الأزمات النفسية، وتأسست عام 2023 من قبل مجموعة من المتطوعين المتخصصين الذين يؤمنون بأهمية الصحة النفسية وحق الجميع في الحصول على الدعم اللازم.</p>
+                                    <a href="#" class="btn btn-primary rounded-5 py-3 px-5"> اقراء المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <button class="btn btn-primary rounded-5 py-3 px-5 mt-5 mx-auto d-block "> عرض الكل</button>
+            </div>
+            <!-- ////////////////////////// end center ////////////////////////// -->
+            <!-- ////////////////////////// start footer ////////////////////////// -->
+            <footer class="text-white pt-5">
+                <div class="row m-0 px-3">
+                    <div class="col-md-3 mb-4 list">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                    <div class="col-md-2 mb-4 list">
+                        <h5 class="fw-bold mb-3">عن الجمعية</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    عن الجمعية
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    الخدمات الإلكترونية
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    المبادرات
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    التوظيف والتطوع
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 justify-content-between list">
+                        <h5 class="fw-bold mb-3">روابط مهمة</h5>
+                        <ul class="list-unstyled important-list d-flex flex-column flex-wrap">
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    اللوائح والسياسات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    المركز الإعلامي
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    اتصل بنا
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    الإحصائيات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fa-solid fa-angle-left ms-2"></i>
+                                    الإحصائيات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4 list">
+                        <h5 class="fw-bold mb-3">للتواصل معنا</h5>
+                        <p class="mb-1">
+                            <i class="fa-solid fa-envelope ms-2"></i>
+                            البريد الإلكتروني: hope.psy@outlook.com
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa-solid fa-phone ms-2"></i>
+                            الهاتف: +966591955655
+                        </p>
+                        <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-4 social flex-wrap">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="text-white">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3 mt-3 copy-right">
+                    <p class="mb-0">© 2025 hope - جميع الحقوق محفوظة</p>
+                </div>
+            </footer>
+            <!-- ////////////////////////// end footer ////////////////////////// -->
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/script.js"></script>
+        </body>
+    </html>

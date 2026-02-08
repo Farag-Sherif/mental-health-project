@@ -1,0 +1,19 @@
+/* ////////////////////////////////start landing-for-subsection//////////////////////////// */
+.landing-for-subsection{
+    background-image: url(../image/About/landing.png);
+}
+/* ///////////////////////////end landing-for-subsection////////////////////////// */
+/* ///////////////////////////start about////////////////////////// */
+.about{
+    padding: 50px 0;
+    .logos{
+        background-image: url(../image/logo.png);
+        height: 20vh;
+        background-repeat: repeat;
+    }
+    .dots{
+        height: 25vh;
+        width: fit-content !important;
+    }
+}
+/* ///////////////////////////end about////////////////////////// */

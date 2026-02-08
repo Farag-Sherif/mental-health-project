@@ -1,0 +1,50 @@
+/* ////////////////////////////////start landing-for-subsection//////////////////////////// */
+.landing-for-subsection {
+    background-image: url(../image/services/landing-1.png);
+}
+
+/* ///////////////////////////end landing-for-subsection////////////////////////// */
+/* ///////////////////////////start electronic-services////////////////////////// */
+.electronic-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 100px 20px;
+    .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+            &:hover {
+                background-color: #001b71;
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+                .card-body {
+                    h5 {
+                        color: white !important;
+                    }
+    
+                    p {
+                        color: white;
+                    }
+    
+                }
+            }
+    
+            img {
+                height: 80px;
+                object-fit: contain;
+            }
+    
+            .card-body {
+                h5 {
+                    margin-bottom: 15px;
+                }
+    
+                p {
+                    color: #666;
+                }
+            }
+        }}
+/* ///////////////////////////end electronic-services////////////////////////// */

@@ -1,0 +1,21 @@
+/* ////////////////////////////////start landing-for-subsection//////////////////////////// */
+.landing-for-subsection {
+    background-image: url(../image/About/landing-2.png);
+}
+
+/* ///////////////////////////end landing-for-subsection////////////////////////// */
+/* ///////////////////////////start organizational-chart////////////////////////// */
+.organizational-chart{
+    padding: 50px 0;
+    .view-ksa{
+            font-size: 14px !important;
+        
+    }
+    img{
+        width: 200px;
+        height: auto;
+        margin: 80px auto 0;
+        display: block;
+    }
+}
+/* ///////////////////////////end organizational-chart////////////////////////// */
